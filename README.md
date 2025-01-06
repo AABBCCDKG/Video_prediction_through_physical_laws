@@ -1,6 +1,6 @@
 # Video_prediction_through_physical_laws
 
-{Here}[[https://royal-celestite-49a.notion.site/Motion-Prediction-through-Physical-Laws-b75fba68cf2f414e9ebd9f84c0db00d7]
+{Here}[https://royal-celestite-49a.notion.site/Motion-Prediction-through-Physical-Laws-b75fba68cf2f414e9ebd9f84c0db00d7]
 ] is the detailed description on notion
 
 ## Project Overview
