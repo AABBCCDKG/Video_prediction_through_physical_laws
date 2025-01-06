@@ -1,5 +1,8 @@
 # Video_prediction_through_physical_laws
 
+{Here}[[https://royal-celestite-49a.notion.site/Motion-Prediction-through-Physical-Laws-b75fba68cf2f414e9ebd9f84c0db00d7]
+] is the detailed description on notion
+
 ## Project Overview
 
 Predicting 2D video sequences is a fundamental task for understanding real-world dynamics. However, existing models often require large datasets for training and struggle to predict complex motions, particularly when data is scarce or expensive. We introduce a framework for predicting object motion based on physical laws. Our approach begins by identifying the position information of objects and fitting position functions to determine the necessary dynamic parameters. These parameters are then used in a physics engine to simulate the motion of the objects. Subsequently, neural networks are employed for texture mapping, resulting in the final predicted image. By leveraging known physical laws, our framework reduces the reliance on large datasets and enhances the model’s ability to predict complex and abrupt motions.
