@@ -23,3 +23,15 @@
 .resources{padding-bottom:40px}
 @media(max-width:1000px){.video-grid{gap:10px}.video-lane{padding:11px}.video-lane.physics{padding:10px}.lane-heading h3{font-size:16px}.lane-role{font-size:8px}.lane-description{font-size:10px}}
 @media(max-width:760px){.video-lane{padding:15px}.video-lane.physics{padding:14px}.lane-heading h3{font-size:20px}.lane-role{font-size:9px;margin-bottom:8px}.lane-description{font-size:11px;min-height:0}.lane-heading{margin-bottom:12px}.video-grid{gap:14px}.resources{padding-bottom:30px}}
+
+/* Comparison hierarchy: ground truth first, then two predictions below. */
+.comparison-stage{padding:21px 24px 18px}
+.groundtruth-row{display:flex;justify-content:center}
+.groundtruth-row .video-lane{width:calc(50% - 8px);min-width:420px}
+.groundtruth-row .recorded{background:#f5f7fa;border-color:#cfd7e4}
+.comparison-bridge{display:flex;align-items:center;gap:16px;margin:17px 0 12px;color:#728197;font-size:9px;font-weight:700;letter-spacing:.08em;text-align:center}
+.comparison-bridge:before,.comparison-bridge:after{content:'';height:1px;background:var(--line);flex:1}
+.prediction-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.prediction-grid .video-lane{height:100%}
+@media(max-width:1000px){.comparison-stage{padding:18px}.groundtruth-row .video-lane{width:calc(50% - 5px);min-width:360px}.prediction-grid{gap:10px}}
+@media(max-width:760px){.comparison-stage{padding:15px}.groundtruth-row .video-lane{width:100%;min-width:0}.comparison-bridge{margin:15px 0 10px;font-size:8px;gap:9px}.prediction-grid{grid-template-columns:1fr;gap:14px}}

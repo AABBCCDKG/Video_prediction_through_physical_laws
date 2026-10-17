@@ -54,3 +54,7 @@ Repository commit: ba8e20bb9e90f49c3c04fca850c25f14b9e97da7. Successful deployme
 The three video lanes are explicitly labeled Reference / Ours / Baseline (with Chinese equivalents). Only our method uses the blue card; recorded footage and baseline cards use neutral gray. The actual video pixels keep their original color. A contact-disabled selection is labeled as an ablation of our method. The baseline card displays its selected model name. The count badge, player resolution note and Citation block have been removed from the presentation. Resolution and experimental scope remain documented in the paper and this source README.
 
 The paper suppresses the title-page Preprint notice in main.tex while retaining the original style file and author-visible layout. The PDF and downloadable LaTeX package are refreshed together.
+
+## Ground-truth-first layout
+
+The demo presents the recorded ground truth by itself above two predictions. Our physics method and the selected baseline sit below in equal-sized cards and both predict the same future from the same observed prefix. The center/ours card uses blue emphasis; the baseline remains neutral. This replaces the previous equal three-column layout while keeping synchronized playback and original video colors.
