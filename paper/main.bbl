@@ -1,0 +1,84 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{AABBCCDKG}(n.d.)]{projectrepo}
+{AABBCCDKG}.
+\newblock {Video\_prediction\_through\_physical\_laws}: Original project
+  repository.
+\newblock GitHub repository, n.d.
+\newblock URL
+  \url{https://github.com/AABBCCDKG/Video_prediction_through_physical_laws}.
+\newblock Revision b596d003f737f40a62ea74a98adba001243bc9cb.
+
+\bibitem[Battaglia et~al.(2016)Battaglia, Pascanu, Lai, Rezende, and
+  Kavukcuoglu]{battaglia2016interaction}
+Peter~W. Battaglia, Razvan Pascanu, Matthew Lai, Danilo~J. Rezende, and Koray
+  Kavukcuoglu.
+\newblock Interaction networks for learning about objects, relations and
+  physics.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~29, 2016.
+\newblock URL \url{https://arxiv.org/abs/1612.00222}.
+
+\bibitem[Isola et~al.(2017)Isola, Zhu, Zhou, and Efros]{isola2017pix2pix}
+Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei~A. Efros.
+\newblock Image-to-image translation with conditional adversarial networks.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1125--1134, 2017.
+\newblock URL \url{https://arxiv.org/abs/1611.07004}.
+
+\bibitem[Le~Guen and Thome(2020)]{leguen2020phydnet}
+Vincent Le~Guen and Nicolas Thome.
+\newblock Disentangling physical dynamics from unknown factors for unsupervised
+  video prediction.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 11474--11484, 2020.
+\newblock URL \url{https://arxiv.org/abs/2003.01460}.
+
+\bibitem[{OpenCV contributors}(n.d.)]{opencv}
+{OpenCV contributors}.
+\newblock Hough circle transform.
+\newblock OpenCV documentation, n.d.
+\newblock URL
+  \url{https://docs.opencv.org/4.x/d4/d70/tutorial_hough_circle.html}.
+\newblock Accessed October 16, 2026.
+
+\bibitem[{Pymunk contributors}(n.d.)]{pymunk}
+{Pymunk contributors}.
+\newblock Pymunk documentation.
+\newblock Project documentation, n.d.
+\newblock URL \url{https://www.pymunk.org/en/latest/}.
+\newblock Accessed October 16, 2026.
+
+\bibitem[{SciPy contributors}(n.d.)]{scipycurvefit}
+{SciPy contributors}.
+\newblock {scipy.optimize.curve\_fit}.
+\newblock SciPy documentation, n.d.
+\newblock URL
+  \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html}.
+\newblock Accessed October 16, 2026.
+
+\bibitem[Shi et~al.(2015)Shi, Chen, Wang, Yeung, Wong, and
+  Woo]{shi2015convlstm}
+Xingjian Shi, Zhourong Chen, Hao Wang, Dit-Yan Yeung, Wai-kin Wong, and
+  Wang-chun Woo.
+\newblock Convolutional {LSTM} network: A machine learning approach for
+  precipitation nowcasting.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~28, 2015.
+\newblock URL \url{https://arxiv.org/abs/1506.04214}.
+
+\bibitem[Watters et~al.(2017)Watters, Zoran, Weber, Battaglia, Pascanu, and
+  Tacchetti]{watters2017visual}
+Nicholas Watters, Daniel Zoran, Theophane Weber, Peter~W. Battaglia, Razvan
+  Pascanu, and Andrea Tacchetti.
+\newblock Visual interaction networks: Learning a physics simulator from video.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+\newblock URL \url{https://arxiv.org/abs/1706.01433}.
+
+\end{thebibliography}

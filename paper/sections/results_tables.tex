@@ -1,0 +1,58 @@
+\begin{table}[htbp]
+\caption{Thirty-frame geometric prediction on four evaluation clips in groups 9 and 10. Image-derived reference centers define the measured cohort. Means give equal weight to the two paired groups; moving ADE uses reference displacement only for reporting.}
+\label{tab:geometry}
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Method & ADE (px) & FDE (px) & Moving ADE (px) \\
+\midrule
+Persistence & 55.46 & 76.91 & 145.63 \\
+Linear & 51.70 & 89.51 & 116.59 \\
+Quadratic & 41.19 & 65.62 & 90.52 \\
+Same state, no contacts & 42.92 & 72.34 & 92.90 \\
+Physics (constant velocity) & 12.42 & 21.24 & 28.91 \\
+Physics (constant acceleration) & 16.58 & 35.95 & 39.72 \\
+Deceleration, no contacts & 39.99 & 62.04 & 88.38 \\
+Physics (deceleration) & 14.02 & 26.76 & 34.56 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At 30 frames, constant-velocity contact simulation has mean ADE 12.42 pixels compared with 42.92 for its matched contact-disabled rollout and 41.19 for quadratic extrapolation. The corresponding moving-object errors are 28.91, 92.90, and 90.52 pixels. Deceleration gives 14.02 pixels overall and 34.56 on moving objects. Constant-velocity simulation also has lower validation ADE than deceleration; all variants remain reported.
+Reference-measurement coverage averages 99.79\% across evaluation clips at the primary horizon, and every reference identity is matched by a prefix track. Pair-time penetration exceeding 10\% of summed radii is 0.00\% for constant-velocity contact simulation versus 2.17\% with contacts disabled. These measurements apply to the annotated object subset.
+
+\begin{table}[htbp]
+\caption{Complete RGB reconstruction at 30 frames and $160\times90$ resolution. PSNR is averaged per clip. ConvLSTM variation is the standard deviation across three seeds, not a scene-level confidence interval.}
+\label{tab:rgb}
+\centering
+\begin{tabular}{lrr}
+\toprule
+Method & RGB MSE & PSNR (dB) \\
+\midrule
+Persistence & 0.002162 & 26.80 \\
+Linear & 0.001953 & 27.37 \\
+Quadratic & 0.001804 & 27.62 \\
+Same state, no contacts & 0.001699 & 28.21 \\
+Physics (constant velocity) & 0.001150 & 29.52 \\
+Physics (deceleration) & 0.001428 & 28.53 \\
+ConvLSTM (3 seeds) & $0.002727 \pm 0.000226$ & $25.85 \pm 0.30$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The compact ConvLSTM has mean RGB MSE 0.002727 compared with 0.002162 for persistence and 0.001150 for constant-velocity simulation with the shared renderer. Selected checkpoints occur at updates 1,900, 2,000, and 2,000. Its outputs remain blurred in several clips and do not improve on persistence under this image metric. This outcome applies to the stated model and budget, not learned video predictors as a class.
+
+\begin{table}[htbp]
+\caption{Per-group 30-frame ADE, averaged over paired clips. Two groups do not support a reliable significance claim.}
+\label{tab:pergroup}
+\centering
+\begin{tabular}{rrrr}
+\toprule
+Group & Physics (CV) & Same state, no contacts & Quadratic \\
+\midrule
+9 & 8.17 & 18.43 & 18.09 \\
+10 & 16.66 & 67.40 & 64.29 \\
+\bottomrule
+\end{tabular}
+\end{table}
+

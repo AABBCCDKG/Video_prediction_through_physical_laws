@@ -18,3 +18,12 @@ Predicting 2D video sequences is a fundamental task for understanding real-world
 
 ## Future Work
 Complete the training of neural network based on cGAN for texture mapping
+
+
+## Project page and current paper
+
+[Interactive project page](https://aabbccdkg.github.io/Video_prediction_through_physical_laws/) · [Paper PDF](paper/main.pdf) · [Website source](website/)
+
+The project page compares all four evaluation clips with synchronized recorded video, physical predictions, and learned predictions. It supports slow playback, frame stepping, contact/no-contact ablations, all three ConvLSTM seeds, and English/Chinese explanations. Paper and experiment downloads are available on the page.
+
+The current manuscript reports an exploratory grouped experiment on the twenty distinct source recordings. Six scene groups are used for training, two for validation, and two for evaluation. Reference positions are image-derived with keyframe review; only two evaluation groups and prior exploratory inspection limit interpretation. The original prototype files remain here as historical source; the downloadable experiment package contains the timestamp-aligned implementation and saved outputs used in the paper.

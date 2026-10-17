@@ -1,0 +1,19 @@
+\begin{tikzpicture}[
+  block/.style={draw,rounded corners=2pt,align=center,
+                minimum height=0.85cm,text width=2.70cm,
+                inner sep=4pt,font=\small},
+  flow/.style={-{Latex[length=2mm]},thick},
+  node distance=0.55cm and 1.15cm
+]
+  \node[block,fill=blue!6] (frames) {Observed frames\\$I_{1:T}$};
+  \node[block,fill=blue!6,right=of frames] (detect) {Circle detection\\and association};
+  \node[block,fill=blue!6,right=of detect] (fit) {Local trajectory fit\\$\hat\pos,\hat\vel,\hat\acc$};
+  \node[block,fill=blue!6,below=of fit] (physics) {Rigid-body rollout\\and object contacts};
+  \node[block,fill=blue!6,left=of physics] (render) {Geometric rendering\\of centers and radii};
+  \node[block,fill=blue!6,left=of render] (outlines) {Predicted outlines\\$O_{1:H}$};
+  \draw[flow] (frames) -- (detect);
+  \draw[flow] (detect) -- (fit);
+  \draw[flow] (fit) -- (physics);
+  \draw[flow] (physics) -- (render);
+  \draw[flow] (render) -- (outlines);
+\end{tikzpicture}
