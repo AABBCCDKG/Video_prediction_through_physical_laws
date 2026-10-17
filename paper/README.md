@@ -7,3 +7,5 @@ Project page and synchronized video demos: https://aabbccdkg.github.io/Video_pre
 `main.pdf` is the current NeurIPS-style preprint. The source compiles with Tectonic, latexmk, or Overleaf. `main.tex` is the main document. All reported results are from the existing-scene exploratory experiment described in the manuscript.
 
 Complete experiment code, original videos, reference measurements, three checkpoints, and training logs are available through the project page's experiment download. Original research files at the repository root are retained.
+
+The title-page notice is suppressed in main.tex at the author's request; the official style file is unchanged.
